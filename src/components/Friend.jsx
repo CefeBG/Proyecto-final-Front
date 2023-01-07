@@ -23,7 +23,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
 
   const patchFriend = async () => {
     const response = await fetch(
-      `proyecto-final-back-production.up.railway.app/users/${_id}/${friendId}`,
+      `https://proyecto-final-back-production.up.railway.app/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {
