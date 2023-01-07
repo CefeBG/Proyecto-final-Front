@@ -8,7 +8,7 @@ const UserImage = ({ image, size = "60px" }) => {
         width={size}
         height={size}
         alt="user"
-        src={`proyecto-final-back-production.up.railway.app/assets/${image}`}
+        src={`https://proyecto-final-back-production.up.railway.app/assets/${image}`}
       />
     </Box>
   );

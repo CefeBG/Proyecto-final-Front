@@ -23,7 +23,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
 
   const patchFriend = async () => {
     const response = await fetch(
-      `proyecto-final-back-production.up.railway.app/users/${_id}/${friendId}`,
+      `https://proyecto-final-back-production.up.railway.app/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {
@@ -42,7 +42,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
         <UserImage image={userPicturePath} size="55px" />
         <Box
           onClick={() => {
-            navigate(`proyecto-final-back-production.up.railway.app/profile/${friendId}`);
+            navigate(`https://proyecto-final-back-production.up.railway.app/profile/${friendId}`);
             navigate(0);
           }}
         >
