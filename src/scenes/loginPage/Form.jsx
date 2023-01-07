@@ -64,7 +64,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "proyecto-final-back-production.up.railway.app/auth/register",
+      "https://proyecto-final-back-production.up.railway.app/auth/register",
       {
         method: "POST",
         body: formData,
@@ -79,7 +79,7 @@ const Form = () => {
   };
 
   const login = async (values, onSubmitProps) => {
-    const loggedInResponse = await fetch("proyecto-final-back-production.up.railway.app/auth/login", {
+    const loggedInResponse = await fetch("https://proyecto-final-back-production.up.railway.app/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),

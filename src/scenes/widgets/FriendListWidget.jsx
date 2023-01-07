@@ -13,7 +13,7 @@ const FriendListWidget = ({ userId }) => {
 
   const getFriends = async () => {
     const response = await fetch(
-      `proyecto-final-back-production.up.railway.app/users/${userId}/friends`,
+      `https://proyecto-final-back-production.up.railway.app/users/${userId}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
